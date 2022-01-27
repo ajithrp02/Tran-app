@@ -14,7 +14,7 @@ branch 'ajithrp02'
 }
 steps{
 scripts{
-app= docker.build("ajithrp02/tran-schedule")
+app= docker.build("ajithrp02/train-schedule")
 app.inside{
 	bat 'echo $(curl localhost:8080)'
 }
