@@ -15,9 +15,7 @@ branch 'ajithrp02'
 steps{
 scripts{
 app= docker.build("ajithrp02/train-schedule")
-app.inside{
-	bat 'echo $(localhost:8080)'
-}
+
 }
 }
 }
