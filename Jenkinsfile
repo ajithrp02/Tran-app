@@ -16,7 +16,7 @@ steps{
 scripts{
 app= docker.build("ajithrp02/train-schedule")
 app.inside{
-	bat 'echo $(curl localhost:8080)'
+	bat 'echo $(localhost:8080)'
 }
 }
 }
